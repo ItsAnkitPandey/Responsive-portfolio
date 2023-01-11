@@ -31,10 +31,10 @@ const textLoad = () =>{
     }, 0);
     setTimeout(() => {
         text.textContent = "Web Designer";
-    }, 3800);
+    }, 4000);
     setTimeout(() => {
         text.textContent = "Freelancer";
-    }, 7800);
+    }, 8000);
 }
 textLoad();
 setInterval(textLoad,12000);
