@@ -272,7 +272,7 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="https://formspree.io/f/xknloglb" method="POST" class="contact__form">
+                <form action="https://formspree.io/f/xknloglb" method="POST" class="contact__form" onsubmit="return validateForm()">
                     <input type="text" placeholder="Name" name="name" class="contact__input" required>
                     <input type="mail" placeholder="Email" name="email" class="contact__input" required>
                     <textarea name="message" placeholder="Your Message here" id="" cols="0" rows="10"

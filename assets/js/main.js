@@ -58,6 +58,21 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+//VALIDATE CONTACT FORM
+function validateForm() {
+    // Get form elements
+    var nameInput = document.querySelector('input[name="name"]');
+    var emailInput = document.querySelector('input[name="email"]');
+    var messageInput = document.querySelector('textarea[name="message"]');
+
+    // Check if any field is empty
+    if (nameInput.value.trim() === "" || emailInput.value.trim() === "" || messageInput.value.trim() === "") {
+        alert("Please fill in all fields before submitting the form.");
+        return false; // Prevent form submission
+    }
+
+    return true; // Allow form submission
+}
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
