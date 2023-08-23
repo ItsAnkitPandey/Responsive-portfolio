@@ -231,9 +231,15 @@
             <h2 class="section-title">Work</h2>
 
             <div class="work__container bd-grid">
-                <a href="https://beautifyyy.netlify.app" class="work__img" target="_blank">
-                    <img src="assets/img/Beautify.JPG" alt="">
-                </a>
+                <div class="projects">
+                    <div class="work__img">
+                        <img src="./assets//img/Beautify.JPG" alt="">
+                    </div>
+                    <div class="links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
                 <a href="https://socialmediapg.netlify.app" class="work__img" target="_blank">
                     <img src="assets/img/socialmedia.png" alt="">
                 </a>
@@ -252,11 +258,11 @@
                 <a href="https://pizzacraze.netlify.app" class="work__img">
                     <img src="assets/img/PizzaCraze.JPG" alt="">
                 </a>
-                
+
                 <a href="https://spidersweb.netlify.app" class="work__img" target="_blank">
                     <img src="assets/img/SpiderWeb.JPG" alt="">
                 </a>
-                
+
 
             </div>
         </section>
@@ -266,11 +272,11 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form  action="https://formspree.io/f/xknloglb" method="POST" class="contact__form">
-                    <input type="text" placeholder="Name" name="name" class="contact__input">
-                    <input type="mail" placeholder="Email" name="email" class="contact__input">
+                <form action="https://formspree.io/f/xknloglb" method="POST" class="contact__form">
+                    <input type="text" placeholder="Name" name="name" class="contact__input" required>
+                    <input type="mail" placeholder="Email" name="email" class="contact__input" required>
                     <textarea name="message" placeholder="Your Message here" id="" cols="0" rows="10"
-                        class="contact__input"></textarea>
+                        class="contact__input" required></textarea>
                     <!-- <input type="button" name="submit" value="Send" class="contact__button button"> -->
                     <button type="submit" name="submit" class="contact__button button">Send</button>
                 </form>
