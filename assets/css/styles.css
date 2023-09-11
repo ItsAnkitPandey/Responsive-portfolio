@@ -562,6 +562,7 @@ background: linear-gradient(to right, #A7CFDF 0%, #23538A 100%);
   }
   .about__img img {
     width: 300px;
+    border: 1px solid rgb(225, 224, 224);
   }
 
   .skills__container {
