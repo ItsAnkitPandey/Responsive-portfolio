@@ -58,6 +58,7 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
 //VALIDATE CONTACT FORM
 function validateForm() {
     // Get form elements
