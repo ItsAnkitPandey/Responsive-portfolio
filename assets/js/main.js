@@ -30,7 +30,7 @@ const textLoad = () =>{
         text.textContent = "Frontend Developer";
     }, 0);
     setTimeout(() => {
-        text.textContent = "Backend Designer";
+        text.textContent = "Backend Developer";
     }, 4000);
     setTimeout(() => {
         text.textContent = "MERN Developer";
