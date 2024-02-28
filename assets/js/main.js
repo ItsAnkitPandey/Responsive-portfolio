@@ -27,13 +27,13 @@ const text = document.querySelector(".sec-text");
 
 const textLoad = () =>{
     setTimeout(() => {
-        text.textContent = "Frontend Developer";
+        text.textContent = "Frontend Dev";
     }, 0);
     setTimeout(() => {
-        text.textContent = "Backend Developer";
+        text.textContent = "Backend Dev";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "MERN Developer";
+        text.textContent = "MERN Dev";
     }, 8000);
 }
 textLoad();
