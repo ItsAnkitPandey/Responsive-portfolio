@@ -341,27 +341,42 @@ background: linear-gradient(to right, #A7CFDF 0%, #23538A 100%);
 }
 
 .skills__html {
-  width: 80%;
+  width: 95%;
 }
 
 .skills__css {
+  width: 90%;
+}
+
+.skills__reactjs {
+  width: 85%;
+}
+
+.skills__nodejs {
+  width: 80%;
+}
+.skills__js {
+  width: 90%;
+}
+
+.skills__angular {
   width: 75%;
 }
 
-.skills__js {
-  width: 45%;
+.skills__java {
+  width: 85%;
+}
+
+.skills__sts {
+  width: 75%;
 }
 
 .skills__ux {
-  width: 50%;
+  width: 85%;
 }
 
 .skills__github {
-  width: 45%;
-}
-
-.skills__canva {
-  width: 55%;
+  width: 85%;
 }
 
 .skills__img {
