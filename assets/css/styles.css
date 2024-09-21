@@ -119,7 +119,7 @@ background: linear-gradient(to right, #A7CFDF 0%, #23538A 100%);
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1024px; 
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
