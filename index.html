@@ -31,11 +31,16 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#certification" class="nav__link">Certification</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
+
+            <button id="theme-toggle" class="nav__theme" type="button" aria-label="Toggle light and dark mode">
+                <i class='bx bx-moon'></i>
+            </button>
 
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
@@ -48,10 +53,15 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ankit</span><br>
-                    <span class="text sec-text ">Web Developer</span><br>
+                    <span class="text sec-text ">Java Full Stack Dev</span><br>
                 </h1>
+                <p class="home__summary">
+                    Java Full Stack Developer with <span id="experience-years-inline">2.4 years</span> at Wipro,
+                    currently delivering Gemini Sustain Plus for National Gas (UK) across SDLC phases from
+                    requirement analysis to production support.
+                </p>
 
-                <a href="./assets/updated_resume.pdf" class="button">Download CV</a>
+                <a href="./assets/Ankit_Pandey_Resume.pdf" class="button" target="_blank">Download CV</a>
             </div>
 
             <div class="home__social">
@@ -90,11 +100,11 @@
 
                 <div>
                     <h2 class="about__subtitle">I'm Ankit</h2>
-                    <p class="about__text">I am a Fullstack web developer from Gorakhpur, India. I develop user
-                        interfaces. I have a diverse set of skills, ranging from design, to HTML + CSS +
-                        Javascript(React + Angular + Node) + Java(Spring Boot). My
-                        expertise is in the area of responsive development. I create <b>beautiful</b> and <b>functional</b>
-                        websites for small businesses.</p>
+                    <p class="about__text">I am a Java Full Stack Developer from Gorakhpur, India, with strong
+                        experience in Java, Spring Boot, Angular, and React. I build scalable APIs, support reliable
+                        batch workflows, and collaborate in Agile teams to deliver production-ready enterprise features.
+                        I also support Python-based automation systems and enjoy solving real business problems with
+                        clean and practical implementations.</p>
                 </div>
             </div>
         </section>
@@ -241,27 +251,57 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img class="education-img" src="assets/img/education.jpg" alt="ankitpandey2 education">
+                    <img class="education-img" src="assets/img/DDU.jpeg" style="margin-bottom: 15px;" alt="ankitpandey2 education">
+                    <img class="education-img education-img-secondary" src="assets/img/education.jpg" style="margin-top: 35px;" alt="ankitpandey2 education">
+                    
                 </div>
                 <div>
                     <div class="education-item">
                         <h3>Bachelor's of Computer Application (B.C.A)</h3>
-                        <p class="education-details">Deen Dayal Upadhyay Gorakhpur University</p>
-                        <p class="education-details">Year: 2020-2023</p>
+                        <p class="education-details">DDU Gorakhpur University</p>
+                        <p class="education-details">Year: Nov 2020 - Oct 2023</p>
                         <p class="education-description">Percentage: 70% </p>
                     </div>
 
                     <div class="education-item">
-                        <h3>Intermediate</h3>
-                        <p class="education-details">P.N.M Inter College (U.P. Board)</p>
-                        <p class="education-details">Year: 2018-2020</p>
+                        <h3>Senior Secondary</h3>
+                        <p class="education-details">PNMIC Fazilnagar Kushinagar</p>
+                        <p class="education-details">Year: Jul 2019 - May 2020</p>
                         <p class="education-description">Percentage: 78%</p>
                     </div>
                     <div class="education-item">
-                        <h3>High School</h3>
-                        <p class="education-details">S.P.S Junior High School (U.P. Board)</p>
-                        <p class="education-details">Year: 2016-2018</p>
+                        <h3>Secondary</h3>
+                        <p class="education-details">SPS Junior High School</p>
+                        <p class="education-details">Year: Apr 2017 - Apr 2018</p>
                         <p class="education-description">Percentage: 84.5%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CERTIFICATIONS =====-->
+        <section class="about section " id="certification">
+            <h2 class="section-title">Certification</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img class="education-img certification-badge-img" src="assets/img/claude-certified-associate-foundations.png" alt="ankitpandey2 claude certification">
+                </div>
+                <div>
+                    <div class="education-item">
+                        <h3>GitHub Copilot Certification (GH-300)</h3>
+                        <p class="education-details">GitHub</p>
+                        <p class="education-description">Year: 2026</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Claude Certified Developer - Foundations (CCDV-F)</h3>
+                        <p class="education-details">Anthropic</p>
+                        <p class="education-description">Issued: Aug 2026</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Claude Certified Associate - Foundations (CCAO-F)</h3>
+                        <p class="education-details">Anthropic</p>
+                        <p class="education-description">Issued: Jul 2026</p>
                     </div>
                 </div>
             </div>
@@ -277,10 +317,16 @@
                 </div>
                 <div>
                     <div class="education-item">
-                        <h3>Developer L1</h3>
-                        <p class="education-details"><b>Wipro</b></p>
-                        <p class="education-details">May2024 - Present</p>
-                        <p class="education-description">Angular, Spring Boot</p>
+                        <h3>Java Full Stack Developer</h3>
+                        <p class="education-details"><b>Wipro Limited</b> | Client: National Gas (UK)</p>
+                        <p class="education-details">May 2024 - Present (<span id="experience-years-work" style="font-weight: bold;">2.4 years</span>)</p>
+                        <ul class="experience-list">
+                            <li>Developing and maintaining full stack applications using Java, Spring Boot, Angular, and React.</li>
+                            <li>Designing REST APIs for reliable communication between backend services and frontend clients.</li>
+                            <li>Working with Azure DevOps CI/CD pipelines for build, test, and deployment automation.</li>
+                            <li>Supporting production batch scheduling and execution workflows using Automic.</li>
+                            <li>Participating in DR readiness and cross-functional Agile delivery with onsite teams.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -350,9 +396,9 @@
     <footer class="footer">
         <p class="footer__title">Ankit Pandey</p>
         <div class="footer__social">
-            <a href="https://www.fb.com/pandeyankit2001" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/_iankitpandit_" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="https://wa.link/45c21t" class="footer__icon"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.linkedin.com/in/ankit-pandey-193359255" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.github.com/itsankitpandey" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="mailto:ankitpandey.272003@gmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
         </div>
         <p class="footer__copy">&#169; Ankit Pandey. All rigths reserved</p>
     </footer>
