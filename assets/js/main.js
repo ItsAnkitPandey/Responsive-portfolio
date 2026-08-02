@@ -24,16 +24,56 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 // ------------------------Text Animation-----------------------------
 
 const text = document.querySelector(".sec-text");
+const experienceInline = document.getElementById("experience-years-inline");
+const experienceWork = document.getElementById("experience-years-work");
+const themeToggleButton = document.getElementById("theme-toggle");
+
+const getExperienceValue = (joinYear, joinMonthIndex) => {
+    const now = new Date();
+    const monthsDiff = (now.getFullYear() - joinYear) * 12 + (now.getMonth() - joinMonthIndex);
+    const elapsedMonths = Math.max(0, monthsDiff + 1);
+    const yearsPart = Math.floor(elapsedMonths / 12);
+    const monthPart = elapsedMonths % 12;
+    return `${yearsPart}.${monthPart}`;
+};
+
+const setDynamicExperience = () => {
+    const experienceText = `${getExperienceValue(2024, 5)} years`;
+    if (experienceInline) experienceInline.textContent = experienceText;
+    if (experienceWork) experienceWork.textContent = experienceText;
+};
+
+const applyTheme = (theme) => {
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("ankit-theme", theme);
+    if (themeToggleButton) {
+        themeToggleButton.innerHTML = theme === "dark" ? "<i class='bx bx-sun'></i>" : "<i class='bx bx-moon'></i>";
+    }
+};
+
+const initTheme = () => {
+    const savedTheme = localStorage.getItem("ankit-theme");
+    if (savedTheme === "light" || savedTheme === "dark") {
+        applyTheme(savedTheme);
+        return;
+    }
+    applyTheme("dark");
+};
+
+themeToggleButton?.addEventListener("click", () => {
+    const current = document.body.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    applyTheme(current === "dark" ? "light" : "dark");
+});
 
 const textLoad = () =>{
     setTimeout(() => {
-        text.textContent = "Frontend Dev";
+        text.textContent = "Java Full Stack Dev";
     }, 0);
     setTimeout(() => {
-        text.textContent = "Backend Dev";
+        text.textContent = "Spring Boot Dev";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "MERN Dev";
+        text.textContent = "Angular React Dev";
     }, 8000);
 }
 textLoad();
@@ -48,16 +88,19 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sections = current.getAttribute('id')
+        const sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sections + ']').classList.add('active')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sections + ']').classList.remove('active')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+initTheme();
+setDynamicExperience();
 
 //VALIDATE CONTACT FORM
 function validateForm() {
